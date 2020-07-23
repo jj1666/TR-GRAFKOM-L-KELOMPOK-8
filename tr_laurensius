@@ -661,75 +661,6 @@ void tribun_depan_garis(void)
     glEnd();
 }
 
-void atap(void)
-{   //tiang
-    glBegin(GL_LINES);
-    glColor3ub(0,0,0);
-    glVertex3f(-55,40,-70);
-    glVertex3f(-55,50,-70);
-    glVertex3f(55,50,-70);
-    glVertex3f(55,40,-70);
-    glVertex3f(-30,40,-70);
-    glVertex3f(-30,50,-70);
-    glVertex3f(30,50,-70);
-    glVertex3f(30,40,-70);
-    glVertex3f(55,49,-75);
-    glVertex3f(55,40,-75);
-    glVertex3f(-55,40,-75);
-    glVertex3f(-55,49,-75);
-    glVertex3f(-30,40,-75);
-    glVertex3f(-30,49,-75);
-    glVertex3f(30,40,-75);
-    glVertex3f(30,49,-75);
-    glEnd();
-    //atap blakang
-    glBegin(GL_POLYGON);
-    glColor3ub(204,0,0);
-    glVertex3f(-55,49,-75);
-    glVertex3f(55,49,-75);
-    glVertex3f(55,51,-65);
-    glVertex3f(-55,51,-65);
-    glEnd();
-    //atap tengah
-    glBegin(GL_POLYGON);
-    glColor3ub(204,0,0);
-    glVertex3f(55,51,-65);
-    glVertex3f(-55,51,-65);
-    glVertex3f(-55,60,-45);
-    glVertex3f(55,60,-45);
-    glEnd();
-    //atap tengah
-    glBegin(GL_POLYGON);
-    glColor3ub(204,0,0);
-    glVertex3f(-55,60,-45);
-    glVertex3f(55,60,-45);
-    glVertex3f(55,60,-35);
-    glVertex3f(-55,60,-35);
-    glEnd();
-    //lineloop atap
-        //atap blakang
-    glBegin(GL_LINE_LOOP);
-    glColor3ub(0,0,0);
-    glVertex3f(-55,49,-75);
-    glVertex3f(55,49,-75);
-    glVertex3f(55,51,-65);
-    glVertex3f(-55,51,-65);
-    glEnd();
-    //atap tengah
-    glBegin(GL_LINE_LOOP);
-    glVertex3f(55,51,-65);
-    glVertex3f(-55,51,-65);
-    glVertex3f(-55,60,-45);
-    glVertex3f(55,60,-45);
-    glEnd();
-    //atap tengah
-    glBegin(GL_LINE_LOOP);
-    glVertex3f(-55,60,-45);
-    glVertex3f(55,60,-45);
-    glVertex3f(55,60,-35);
-    glVertex3f(-55,60,-35);
-    glEnd();
-}
 
     void display(void)
    {
@@ -742,7 +673,6 @@ void atap(void)
     gawang();
     renderScene();
     garis_lapangan();
-    atap();
 
     glPopMatrix();
     glutSwapBuffers();
