@@ -1237,7 +1237,7 @@ int main(int argc, char **argv){
     glutInitDisplayMode(GLUT_RGB | GLUT_DOUBLE);
     glutInitWindowPosition(250, 80);
     glutInitWindowSize(800, 600);
-    glutCreateWindow("PENYU - 672018114_672018132");
+    glutCreateWindow("TR_GRAFKOM - 672018114_672018132_672018213");
     init();
     glutDisplayFunc(display);
     glutKeyboardFunc(keyboard);
